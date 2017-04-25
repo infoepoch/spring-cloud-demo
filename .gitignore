@@ -1,0 +1,6 @@
+api-gateway/.settings
+service-A/.settings
+service-B/.settings
+eureka-server/.settings
+*.classpath
+*.project
