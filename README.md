@@ -23,7 +23,7 @@ Spring Cloud 基础案例
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+</dependencyManagement>
 ```
 
 ### 项目说明
@@ -36,6 +36,6 @@ Spring Cloud 基础案例
 
 ---
 ## 参考地址
-[打造Spring Cloud构建微服务架构的最全资料](http://git.oschina.net/didispace/SpringCloud-Learning)
-[Spring Boot教程](http://git.oschina.net/didispace/SpringBoot-Learning)
-[Spring Cloud官方](https://projects.spring.io/spring-cloud/)
+- [打造Spring Cloud构建微服务架构的最全资料](http://git.oschina.net/didispace/SpringCloud-Learning)
+- [Spring Boot教程](http://git.oschina.net/didispace/SpringBoot-Learning)
+- [Spring Cloud官方](https://projects.spring.io/spring-cloud/)
