@@ -1,14 +1,16 @@
 Spring Cloud 基础案例
 ====================
+本案例演示啦，Spring Cloud zuul、hystrix-dashboard 基本使用方法。
+
 ### 使用模块
 * Spring Boot parent 版本 
 ```xml
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.8.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+<parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>1.3.8.RELEASE</version>
+	<relativePath/> <!-- lookup parent from repository -->
+</parent>
 ```
 * Spring Cloud 版本 
 
@@ -27,12 +29,19 @@ Spring Cloud 基础案例
 ```
 
 ### 项目说明
+项目通过 Maven 构建
+![eureka-server](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/master/doc/img/eureka-server.png)
 
 ### 启动顺序说明
-* 1.eureka-server 注册服务
-* 2.api-gateway 网管，zuul
-* 3.service-A 基础服务A
-* 4.service-B 基础服务B
+* 1.eureka-server 注册服务，访问：http://127.0.0.1:1111/
+* 2.api-gateway 网管，zuul，访问地址：http://127.0.0.1:5555/api-all/add?a=1&b=2&accessToken=123
+* 3.service-A 基础服务A，访问地址：http://127.0.0.1:5555/api-a/add?a=1&b=2&accessToken=123
+* 4.service-B 基础服务B，访问地址：http://127.0.0.1:5555/api-b/add?a=1&b=2&accessToken=123
+
+### 功能介绍
+- 1.服务注册和发现
+- 2.api-gateway 认证，负载，熔断。具体参考 项目中的配置文件
+- 3.service 服务，基本的运算
 
 ---
 ## 参考地址
