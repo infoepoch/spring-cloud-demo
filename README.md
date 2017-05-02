@@ -8,7 +8,7 @@ Spring Cloud 基础案例
 <parent>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-parent</artifactId>
-	<version>1.3.8.RELEASE</version>
+	<version>1.5.2.RELEASE</version>
 	<relativePath/> <!-- lookup parent from repository -->
 </parent>
 ```
@@ -20,7 +20,7 @@ Spring Cloud 基础案例
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.RELEASE</version>
+				<version>Dalston.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
