@@ -37,7 +37,9 @@ Spring Cloud 基础案例
 * 2.api-gateway 网管，zuul，访问地址：http://127.0.0.1:5555/api-all/add?a=1&b=2&accessToken=123
 * 3.service-A 基础服务A，访问地址：http://127.0.0.1:5555/api-a/add?a=1&b=2&accessToken=123
 * 4.service-B 基础服务B，访问地址：http://127.0.0.1:5555/api-b/add?a=1&b=2&accessToken=123
+* 5.hystrix 网页查看，访问地址：http://127.0.0.1:5555/hystrix。需要配置为 http://127.0.0.1:5555/hystrix.stream
 
+ 
 ### 功能介绍
 - 1.服务注册和发现
 - 2.api-gateway 认证，负载，熔断。具体参考 项目中的配置文件
