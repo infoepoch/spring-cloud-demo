@@ -1,4 +1,4 @@
-package com.didispace;
+package com.infoepoch;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
