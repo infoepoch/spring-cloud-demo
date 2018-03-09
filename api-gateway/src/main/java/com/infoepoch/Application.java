@@ -1,12 +1,13 @@
-package com.didispace;
+package com.infoepoch;
 
-import com.didispace.filter.AccessFilter;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
+
+import com.infoepoch.filter.AccessFilter;
 
 @EnableHystrix
 @EnableHystrixDashboard
