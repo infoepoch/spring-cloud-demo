@@ -8,7 +8,7 @@ Spring Cloud 基础案例
 <parent>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-parent</artifactId>
-	<version>2.0.0.RELEASE</version>
+	<version>2.0.5.RELEASE</version>
 	<relativePath/> <!-- lookup parent from repository -->
 </parent>
 ```
@@ -20,7 +20,7 @@ Spring Cloud 基础案例
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.M8</version>
+				<version>Finchley.SR1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
