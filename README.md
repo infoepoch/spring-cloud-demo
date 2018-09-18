@@ -32,6 +32,11 @@ Spring Cloud 基础案例
 项目通过 Maven 构建
 ![eureka-server](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/master/doc/img/eureka-server.png)
 
+链路追踪结果
+![zipkin-server](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/master/doc/img/zipkin.png)
+
+![zipkin-trace](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/master/doc/img/zipkin-trace.png)
+
 ### 启动顺序说明
 * 1.eureka-server 注册服务，访问：http://127.0.0.1:1111/
 * 2.api-gateway 网管，zuul，访问地址：http://127.0.0.1:5555/api-all/add?a=1&b=2&accessToken=123
