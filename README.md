@@ -35,7 +35,7 @@ Spring Cloud 基础案例
 链路追踪结果
 ![zipkin-server](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/v2/doc/img/zipkin.png)
 
-![zipkin-trace](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/v2/doc/img/zipkin.png)
+![zipkin-trace](https://raw.githubusercontent.com/infoepoch/spring-cloud-demo/v2/doc/img/zipkin-trace.png)
 
 ### 启动顺序说明
 * 1.eureka-server 注册服务，访问：http://127.0.0.1:1111/
