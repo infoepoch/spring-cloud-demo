@@ -4,3 +4,4 @@ service-B/.settings
 eureka-server/.settings
 *.classpath
 *.project
+.idea

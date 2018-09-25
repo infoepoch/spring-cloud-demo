@@ -4,49 +4,31 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.infoepoch</groupId>
-    <artifactId>service-A</artifactId>
-    <version>2.0.0</version>
+    <artifactId>spring-cloud-server</artifactId>
+    <version>2.0.5.RELEASE</version>
     <packaging>jar</packaging>
 
-    <name>service-A</name>
+    <name>infoepoch-spring-cloud-demo</name>
     <description>Spring Cloud project</description>
 
     <parent>
-        <groupId>com.infoepoch</groupId>
-        <artifactId>spring-cloud-server</artifactId>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <modules>
+        <module>eureka-server</module>
+        <module>api-gateway</module>
+        <module>service-A</module>
+        <module>service-B</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
-    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -59,7 +41,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -68,4 +49,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
