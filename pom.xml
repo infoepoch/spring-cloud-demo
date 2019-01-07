@@ -23,6 +23,7 @@
         <module>api-gateway</module>
         <module>service-A</module>
         <module>service-B</module>
+        <module>openfeign</module>
     </modules>
 
     <properties>
