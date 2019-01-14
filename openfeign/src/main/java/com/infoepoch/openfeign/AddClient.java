@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 @FeignClient(value = "service-A", configuration = FeignConfig.class, fallback = AddClientFallback.class)
 public interface AddClient {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
-    String add(@RequestParam Integer a, @RequestParam Integer b);
+    String add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b);
 }
 
 
