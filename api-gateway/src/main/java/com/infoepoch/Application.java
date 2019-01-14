@@ -11,7 +11,6 @@ import com.infoepoch.filter.AccessFilter;
 
 @EnableHystrix
 @EnableHystrixDashboard
-
 @EnableZuulProxy
 @SpringCloudApplication
 public class Application {
@@ -20,9 +19,9 @@ public class Application {
 		new SpringApplicationBuilder(Application.class).web(true).run(args);
 	}
 
-	@Bean
-	public AccessFilter accessFilter() {
-		return new AccessFilter();
-	}
+//	@Bean
+//	public AccessFilter accessFilter() {
+//		return new AccessFilter();
+//	}
 
 }
