@@ -1,9 +1,10 @@
 Spring Cloud 基础案例
 ====================
-本案例演示啦，Spring Cloud zuul、hystrix-dashboard 基本使用方法。
+案例集成了Eureka、Zuul、OpenFeign、Zipkin、Hystrix等SpringCloud组件和基本使用方法。
 
-### 使用模块
-* Spring Boot parent 版本 
+### Dependency
+* spring boot parent
+
 ```xml
 <parent>
 	<groupId>org.springframework.boot</groupId>
@@ -12,21 +13,37 @@ Spring Cloud 基础案例
 	<relativePath/> <!-- lookup parent from repository -->
 </parent>
 ```
-* Spring Cloud 版本 
+* spring cloud 版本 
 
 ```xml
 <dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.SR1</version>
-				<type>pom</type>
-				<scope>import</scope>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-dependencies</artifactId>
+			<version>Finchley.SR2</version>
+			<type>pom</type>
+			<scope>import</scope>
 			</dependency>
-		</dependencies>
+	</dependencies>
 </dependencyManagement>
 ```
+
+### 运行项目
+
+```
+mvn package
+java -jar eureka-server/target/eureka-server-2.0.0.jar
+java -jar api-gateway/target/api-gateway-2.0.0.jar
+java -jar open-feign/target/open-feign-2.0.0.jar
+java -jar service-A/target/service-A-2.0.0.jar
+```
+
+eureka server: [http://localhost:1111/](http://localhost:1111/)
+
+![eureka server](https://ws1.sinaimg.cn/large/005OU41Ngy1fz661w7qt6j327w17eahi.jpg)
+
+gateway支持熔断：[http://localhost:5555/api-a?a=1&b=2](http://localhost:5555/api-a?a=1&b=2)
 
 ### 项目说明
 项目通过 Maven 构建
