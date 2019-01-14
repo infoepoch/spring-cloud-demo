@@ -2,6 +2,8 @@ Spring Cloud 基础案例
 ====================
 本案例演示啦，Spring Cloud zuul、hystrix-dashboard 基本使用方法。
 
+[![Build Status](https://travis-ci.org/infoepoch/spring-cloud-demo.svg?branch=v2)](https://travis-ci.org/infoepoch/spring-cloud-demo)
+
 ### 使用模块
 * Spring Boot parent 版本 
 ```xml
