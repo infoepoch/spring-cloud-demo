@@ -2,7 +2,7 @@ Spring Cloud 基础案例
 ====================
 本案例演示啦，Spring Cloud zuul、hystrix-dashboard 基本使用方法。
 
-[![Build Status](https://travis-ci.org/infoepoch/spring-cloud-demo.svg?branch=v2)](https://travis-ci.org/infoepoch/spring-cloud-demo)
+[![Build Status](https://travis-ci.org/infoepoch/spring-cloud-demo.svg?branch=v2.0.x)](https://travis-ci.org/infoepoch/spring-cloud-demo)
 
 ### 使用模块
 * Spring Boot parent 版本 
@@ -22,7 +22,7 @@ Spring Cloud 基础案例
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Finchley.SR1</version>
+				<version>Finchley.SR2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
